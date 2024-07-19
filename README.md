@@ -20,7 +20,7 @@ Transfer files over WiFi between your computer and your smartphone from the term
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/sharefile-qr.git
+   git clone https://github.com/maanimis/shareFile-QR
    cd sharefile-qr
 
 2. Install the dependencies:
