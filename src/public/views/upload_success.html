@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Upload</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        color: #343a40;
+      }
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        text-align: center;
+      }
+      h1 {
+        color: #007bff;
+      }
+      p {
+        font-size: 18px;
+      }
+      .file-info {
+        font-size: 16px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>File Uploaded Successfully!</h1>
+      <p>Your file has been uploaded to the server.</p>
+      <div class="file-info">
+        <strong>File Name:</strong> <span id="file-name"></span> <br />
+        <strong>Size:</strong> <span id="file-size"></span> bytes
+      </div>
+    </div>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      document.getElementById("file-name").innerText = params.get("name");
+      document.getElementById("file-size").innerText = params.get("size");
+    </script>
+  </body>
+</html>
